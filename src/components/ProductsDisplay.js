@@ -1,7 +1,7 @@
 import React from "react"
 
 
-const Card = (props) =>{
+const ProductsDisplay = (props) =>{
     return(
         <div className={props.className} >
             <div className="small-div">
@@ -22,5 +22,5 @@ const Card = (props) =>{
     )
     }
     
-    export default Card;
+    export default ProductsDisplay;
     

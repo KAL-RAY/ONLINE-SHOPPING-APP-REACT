@@ -3,10 +3,10 @@ import React from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-function Main() {
+function CategorySection() {
 
     return (
-        <div className='main'>
+        <div className='categorysection'>
 <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
@@ -20,7 +20,7 @@ function Main() {
     )
 }
 
-export default Main;
+export default CategorySection;
 
 
     
@@ -123,32 +123,7 @@ export default Main;
     // return (
     //     <div className='main'>
 
-    //         <section id="main">
-    //             <div class="left-div">
-    //                 <div class="category-section">
-    //                     <ul class="phone-brands-list">
-
-
-    //                         <li class="phone-brand" ><a href="#bar-iphone"><span style="padding-left:5px">Iphone</span></a></li>
-    //                         <li class="phone-brand" ><a href="#bar-samsung"><span style="padding-left:30px">Samsung</span></a></li>
-    //                         <li class="phone-brand" ><a href="#bar-infinix">Infinix</a></li>
-    //                         <li class="phone-brand" ><a href="#bar-tecno">Techno</a></li>
-
-
-    //                     </ul>
-    //                 </div>
-    //             </div>
-
-    //             <div class="right-div">
-    //                 <div>
-    //                     <img src="assets/Images/flash-sale.jpg" />
-    //                     <p>Apple Iphone 13</p>
-    //                     <p>UGX 3,000,000</p>
-    //                     <p>10% Discount</p>
-    //                 </div>
-    //             </div>
-
-    //         </section>
+    //         
 
 
     //         <section id="display-section">
