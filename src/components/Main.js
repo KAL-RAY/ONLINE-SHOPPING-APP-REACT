@@ -1,5 +1,7 @@
 import React from "react";
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function Main() {
 
@@ -10,9 +12,8 @@ function Main() {
 <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
-
-
-
+<h1>Main</h1>
+<h1>Main</h1>
 
         </div>
 
