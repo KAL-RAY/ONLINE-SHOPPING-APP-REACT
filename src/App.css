@@ -295,14 +295,16 @@ width: 98%;
   }
   #top-footer{
   padding-top: 5px;
+  height: 600px;
+  background-color: gray;
   }
-/*   
-  .bottom-footer{
-      padding-top: 5px;
-      height: 50px;
-      text-align:left;
-   
-  } */
+  #bottom-footer{
+    padding-top: 5px;
+    height: 600px;
+    background-color: gray;
+    }
+  
+ 
   img{
       padding-top: 50px;
   } 

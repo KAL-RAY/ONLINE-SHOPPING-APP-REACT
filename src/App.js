@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import CategorySection from './components/CategorySection';
 import ProductsDisplay from './components/ProductsDisplay';
-import ContactUs from './components/ContactUs';
+// import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -62,9 +62,10 @@ function App() {
                       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                       pariatur.'
             />
+
             <Footer/>
-            <hr/>
-            <ContactUs/>
+            {/* <hr/> */}
+            {/* <ContactUs/> */}
            
 
 
