@@ -1,13 +1,10 @@
 import React from 'react';
 
-import Header from './components/Header';
-import CategorySection from './components/CategorySection';
-import ProductsDisplay from './components/ProductsDisplay';
-// import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
+import Header from './components/landingpage/Header';
+import CategorySection from './components/landingpage/CategorySection';
+import ProductsDisplay from './components/landingpage/ProductsDisplay';
+import Footer from './components/landingpage/Footer';
 import './App.css';
-
-
 
 
 function App() {
@@ -15,8 +12,6 @@ function App() {
         <div className="App">
             <Header/>
             <CategorySection/>
-            <ProductsDisplay/>
-
             <ProductsDisplay
                 className='section'
                 img='./Capture1.PNG'
@@ -62,13 +57,7 @@ function App() {
                       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                       pariatur.'
             />
-
             <Footer/>
-            {/* <hr/> */}
-            {/* <ContactUs/> */}
-           
-
-
         </div>
     );
 }
