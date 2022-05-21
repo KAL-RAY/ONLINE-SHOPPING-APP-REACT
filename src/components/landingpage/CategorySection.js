@@ -1,19 +1,30 @@
 import React from "react";
+import Barner from "../categories/Barner";
+
+import CategoryList from "../categories/CategoryList";
+import CategoryProductsContainer from "../categories/CategoryProductsContainer";
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+const categoriesList = ["iphone", "tecno", "sumsang", "infinix"]
 
 function CategorySection(props) {
 
     return (
-        <div className='categorysection'>
+        <>
+            <div className='categorysection'>
+                <CategoryList categories={categoriesList} className="left-div" />
+                <Barner className="right-div" />
+            </div>
+            {
+                categoriesList.map((category, index) => <CategoryProductsContainer title={category} />)
+            }
+{/* <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
 <h1>Main</h1>
-<h1>Main</h1>
-<h1>Main</h1>
+<h1>Main</h1> */}
 {/* 
 <section id="main">
         <div class="left-div">
@@ -45,7 +56,7 @@ function CategorySection(props) {
     {/* </section>  */}
 
 
-        </div>
+        </>
 
     )
 }
