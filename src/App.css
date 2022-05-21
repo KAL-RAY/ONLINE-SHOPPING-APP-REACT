@@ -166,8 +166,7 @@ width: 98%;
         background-color:beige;
         height: 500px;
         color: black;
-        
-            }
+        }
         
         .left-div{
                 background-color: beige;
@@ -177,7 +176,7 @@ width: 98%;
                  margin-right: 0px;
                  padding-left: 50px;
                  height: 400px;
-                 width: 40%;
+                 width: 50vw;
                  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
              
          }
@@ -189,7 +188,7 @@ width: 98%;
             margin-top: 150px;
             margin-right: 0px;
             padding-bottom: 150px;
-            width: 60%
+            width: 50vw;
            
             
         }

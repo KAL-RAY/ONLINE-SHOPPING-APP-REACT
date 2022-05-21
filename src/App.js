@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './components/landingpage/Header';
 import CategorySection from './components/landingpage/CategorySection';
-import ProductsDisplay from './components/landingpage/ProductsDisplay';
+import ProductsDisplay from './components/categories/ProductsDisplay';
 import Footer from './components/landingpage/Footer';
 import './App.css';
 
@@ -12,7 +12,8 @@ function App() {
         <div className="App">
             <Header/>
             <CategorySection/>
-            <ProductsDisplay
+            
+            {/* <ProductsDisplay
                 className='section'
                 img='./Capture1.PNG'
                 title='Iphone'
@@ -56,7 +57,7 @@ function App() {
                       aliquip ex ea commodo consequat. Duis aute irure dolor in
                       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                       pariatur.'
-            />
+            /> */}
             <Footer/>
         </div>
     );
