@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCartShopping, faTruck } from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -7,7 +9,7 @@ import React from "react";
 
 import { TextField} from "@mui/material";
 
-function Header(){
+function Header(props){
     return (
         <div className='header'>
             <nav>
@@ -36,7 +38,7 @@ function Header(){
                         <span>
                            <span>
                                {/* <a id="homepage-link" href="./index.html" alt="homepage" style="width:300px;"> */}
-                                <i class="fa-solid fa-truck-fast">GADGET WORLD</i>
+                                <FontAwesomeIcon icon={faTruck} /> GADGET WORLD
     {/* <Icon baseClassName="fas" className="fa-plus-circle" />
     <Icon baseClassName="fas" className="fa-plus-circle" color="primary" /> */}
       
@@ -50,7 +52,7 @@ function Header(){
                         <span class="search-span">
                                 <div>
                                     <span>
-                                        <TextField type="text" size="small" id="searchbar" placeholder="Search Brands and Categories"/>
+                                        <TextField type="text" size="small" id="searchbar" placeholder="Search Brands and Categories" />
                                     </span>
                                     <span>
                                         <a href="./searchresults.html" alt="go to search" ><button id="btnSearch" size="small" >SEARCH</button></a>
@@ -62,9 +64,9 @@ function Header(){
 
                         {/* </form> */}
 
-                        <span>
+                        <span onClick={() => { props.goToCart() }} style={{cursor: 'pointer'}}>
                             {/* <a id="cartpage-link" href="./cartpage.html" alt="cartMenu" style="margin-right:50px;"> */}
-                        <i class="fa-solid fa-cart-shopping">Cart</i>
+                            <FontAwesomeIcon icon={faCartShopping} /> Cart <sup>{props.cartSize}</sup>
                         </span>
                         {/* </a> */}
 
