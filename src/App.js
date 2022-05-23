@@ -37,13 +37,20 @@ function App() {
         let cartTemp = cart
         cartTemp.push(product)
         setCart(cartTemp)
+        alert("Item has been added to cart successfully!!");
 
+    }
+
+    function removeFromCart(product){
+        let cartTemp = cart
+        cartTemp.splice(product, 1)
+        setCart(cartTemp)
     }
 
 
     function showBody(){
         if (showingPage === "cart") {
-            return <CartContainer />
+            return <CartContainer cart={cart} removeFromCart={removeFromCart} />
         } else if (showingPage === "main") {
             return <MainContainer ref={mainContainerRef} goToProduct={(product) => { setSelectedProduct(products[product]); setShowingPage("product") }} addToCart={addToCart} products={products} styles={{ marginTop: '500px' }} />
         } else if (showingPage === "product") {
@@ -59,7 +66,7 @@ function App() {
 
     return (
         <div className="App">
-            <Header goToCart={() => { setShowingPage("cart") }} cartSize={cart.length} />
+            <Header goToCart={() => { setShowingPage("cart") }} cartSize={cart.length} products={products} setProducts={setProducts} />
             {
                 showBody()
             }

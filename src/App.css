@@ -76,6 +76,13 @@ div.right-nav{
   border-color:beige;
 }
 
+.btn{
+  background-color: white;
+  color: black;
+  border-color:beige;
+}
+
+
 .nav-text{
   width: 500px;
 
@@ -212,12 +219,14 @@ width: 98%;
             padding: 1rem;
             width: 100%;
             list-style: none;
+
            
         }
         
         
         .phone-brand:hover{
             background-color:orange;
+            cursor: pointer;
           }
         
         
@@ -227,6 +236,10 @@ width: 98%;
             margin-bottom: .1rem;
             list-style: none;
             font-size: xx-large;
+            background-color: beige;
+            width: 300px;
+            padding-left: 20px;
+
            
             /* text-align: center; */
             /* padding-left: 30px; */
@@ -252,7 +265,7 @@ width: 98%;
         
         .model-tile {
             display: inline-block;
-            width: 250px;
+            width: 400px;
             background-color:white;
         }
         
@@ -271,7 +284,7 @@ width: 98%;
   color: black;
   background-color:gray;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 20px;
   font-size: xx-large;
   height: 300px;
 
@@ -282,8 +295,8 @@ width: 98%;
     font-weight: bold;
   }
   #top-footer{
-  padding-top: 5px;
-  height: 600px;
+  padding-top: 0px;
+  height: 200px;
   background-color: gray;
   }
   #bottom-footer{
@@ -381,6 +394,13 @@ width: 98%;
   border: 0;
   background-color: orange
   /* background-color: orange; */
+}
+
+
+.productsmenu{
+  text-align: center;
+ padding-left: 20px;
+
 }
 
 

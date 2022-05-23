@@ -7,7 +7,7 @@ function ProductContainer(props) {
 
     return (<>
         <div>
-            <li style={{ maxHeight: '100vh', listStyle: 'none'  }}>
+            <li style={{ maxHeight: '100vh', listStyle: 'none' }}>
                 <div className="product-details">
                     <img src={props.product.image} alt="title" width={"150px"} />
                     <p>$ {props.product.price}</p>
@@ -15,11 +15,18 @@ function ProductContainer(props) {
                         <h3>{props.product.title}</h3>
                         <p>{props.product.description}</p>
                     </div>
-                    <Button variant="contained" size="medium" background-color="orange" onClick={() => { props.addToCart(props.product)
-                    alert("Item has been added to cart successfully!!");
-                    }}>Add to cart</Button> 
-                    <br/>
-                    <br/>          
+                    <button className="btn" variant="contained" size="medium" background-color="orange" onClick={() => {
+                        props.addToCart(props.product)
+
+                    }}>Add to cart</button>
+                    <br />
+                    <br />
+                    <div>
+
+
+                    </div>
+
+
                 </div>
             </li>
         </div>

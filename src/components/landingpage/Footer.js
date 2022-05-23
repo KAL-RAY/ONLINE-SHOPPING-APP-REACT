@@ -1,4 +1,5 @@
 import React from "react"
+import Link from '@mui/material/Link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faTwitter, faSkype, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
@@ -8,11 +9,10 @@ function Footer() {
         <div className='footer'>
 
             <div id="top-footer">
-                {/* <p>FOLLOW US </p>
-                <h1>facebook</h1>
-                <h1>twitter</h1> */}
+                 <p>FOLLOW US </p>
+           <br/>
 
-                {/* <a href="https://facebook.com/" alt="facebook" style="margin-right: 50px;"> */}
+                {/* <a href="#" alt="facebook" style="margin-right: 50px;"> */}
                     <FontAwesomeIcon icon={faFacebook} /> Facebook
                 {/* </a> */}
                     {/* <a href="https://twitter.com/" alt="twitter" style="margin-right: 50px;"> */}
